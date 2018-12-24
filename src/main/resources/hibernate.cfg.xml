@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Database Connection Settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/countryinformationportal</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<!-- JDBC Connection Pool -->
+
+		<property name="connection.pool_size">5</property>
+
+		<!-- SQL Dialect -->
+
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+		<!-- prints the sql query on the console -->
+		<property name="show_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">update</property>
+
+
+
+		<!-- <mapping resource="resource/student.hbm.xml" /> -->
+		<mapping class="com.cip.countryinfo.model.Countries" />
+		<mapping class="com.cip.countryinfo.model.Languages" />
+		<mapping class="com.cip.countryinfo.model.Sports" />
+		<mapping class="com.cip.countryinfo.model.Cities" />
+		<mapping class="com.cip.countryinfo.model.User" />
+		<mapping class="com.cip.countryinfo.model.CountriesDetails" />
+	</session-factory>
+</hibernate-configuration>
