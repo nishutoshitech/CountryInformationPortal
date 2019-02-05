@@ -8,8 +8,6 @@ import org.hibernate.criterion.Projections;
 
 import com.cip.countryinfo.hibernate.util.HibernateUtil;
 import com.cip.countryinfo.model.Cities;
-import com.cip.countryinfo.model.Countries;
-import com.cip.countryinfo.model.User;
 
 public class CityDAO {
 
@@ -30,6 +28,7 @@ public class CityDAO {
 		
 	}
 
+	@SuppressWarnings({ "unchecked", "deprecation" })
 	public Object getCityList() {
 		Session session = HibernateUtil.openSession();
 		List<String> cityList = null;

@@ -32,6 +32,6 @@
 		<mapping class="com.cip.countryinfo.model.Sports" />
 		<mapping class="com.cip.countryinfo.model.Cities" />
 		<mapping class="com.cip.countryinfo.model.User" />
-		<mapping class="com.cip.countryinfo.model.CountriesDetails" />
+		<!-- <mapping class="com.cip.countryinfo.model.CountriesDetails" /> -->
 	</session-factory>
 </hibernate-configuration>

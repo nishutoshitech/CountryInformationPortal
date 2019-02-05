@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
-import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.Projections;
 
 import com.cip.countryinfo.hibernate.util.HibernateUtil;
@@ -28,6 +27,7 @@ public class CountryDAO {
 		}
 	}
 
+	@SuppressWarnings({ "deprecation", "unchecked" })
 	public List<String> getCountryList() {
 		Session session = HibernateUtil.openSession();
 		List<String> countryList = null;

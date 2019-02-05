@@ -7,7 +7,6 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Projections;
 
 import com.cip.countryinfo.hibernate.util.HibernateUtil;
-import com.cip.countryinfo.model.Countries;
 import com.cip.countryinfo.model.Languages;
 
 public class LanguageDAO {
@@ -29,6 +28,7 @@ public class LanguageDAO {
 		
 	}
 
+	@SuppressWarnings({ "deprecation", "unchecked" })
 	public Object getLanguageList() {
 		Session session = HibernateUtil.openSession();
 		List<String> langaugeList = null;

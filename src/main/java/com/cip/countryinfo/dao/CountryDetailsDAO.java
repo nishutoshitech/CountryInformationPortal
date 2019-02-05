@@ -1,8 +1,5 @@
 package com.cip.countryinfo.dao;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.hibernate.Session;
 
 import com.cip.countryinfo.hibernate.util.HibernateUtil;

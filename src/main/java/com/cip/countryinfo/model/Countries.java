@@ -16,6 +16,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "COUNTRY_TABLE")
 public class Countries implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int countryId;
@@ -25,7 +29,7 @@ public class Countries implements Serializable {
 	@OneToOne
 	private Cities capital;
 	@ManyToMany
-	private List<Sports> listSports = new ArrayList();
+	private List<Sports> listSports = new ArrayList<Sports>();
 	
 	public List<Sports> getListSports() {
 		return listSports;

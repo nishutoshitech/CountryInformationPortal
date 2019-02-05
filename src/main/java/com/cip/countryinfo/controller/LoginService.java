@@ -12,7 +12,6 @@ import com.cip.countryinfo.dao.CityDAO;
 import com.cip.countryinfo.dao.CountryDAO;
 import com.cip.countryinfo.dao.LanguageDAO;
 import com.cip.countryinfo.dao.SportDAO;
-import com.cip.countryinfo.dao.UserDAO;
 import com.cip.countryinfo.model.Cities;
 import com.cip.countryinfo.model.Countries;
 import com.cip.countryinfo.model.Languages;

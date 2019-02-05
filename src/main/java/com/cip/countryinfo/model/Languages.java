@@ -14,12 +14,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "LANGUAGE_TABLE")
 public class Languages implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int languageId;
 	private String languageName;
 	@OneToMany
-	private List<Countries> countries = new ArrayList();
+	private List<Countries> countries = new ArrayList<Countries>();
 
 	public List<Countries> getCountries() {
 		return countries;

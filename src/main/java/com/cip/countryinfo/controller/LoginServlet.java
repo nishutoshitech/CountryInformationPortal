@@ -12,6 +12,11 @@ import com.cip.countryinfo.dao.UserDAO;
 
 @WebServlet("/loginservlet")
 public class LoginServlet extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3942113584753274882L;
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String userName = request.getParameter("userName");

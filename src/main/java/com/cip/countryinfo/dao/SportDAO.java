@@ -7,9 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Projections;
 
 import com.cip.countryinfo.hibernate.util.HibernateUtil;
-import com.cip.countryinfo.model.Countries;
 import com.cip.countryinfo.model.Sports;
-import com.cip.countryinfo.model.User;
 
 public class SportDAO {
 
@@ -29,6 +27,7 @@ public class SportDAO {
 		}
 	}
 
+	@SuppressWarnings({ "deprecation", "unchecked" })
 	public Object getsportsList() {
 		Session session = HibernateUtil.openSession();
 		List<String> sportsList = null;
